@@ -1,0 +1,7 @@
+{
+    "watch": ["server", "src"],
+    "ext": "js,json",
+    "ignore": ["dist", "node_modules"],
+    "exec": "webpack serve --mode development"
+  }
+  

@@ -1,5 +1,4 @@
-console.log("Hola desde webpack 🐧🪼🔪")
+import "./stylesheets/main.scss"
 
-const despedida = "hasta pronto!"
-
-console.log(despedida);
+const home = document.getElementById("home");
+home.innerHTML = "<h1>Página principal - Home</h1>";
