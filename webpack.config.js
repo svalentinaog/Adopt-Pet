@@ -11,6 +11,8 @@ module.exports = {
     productDetail: './src/js/product-detail.js',
     createForm: './src/js/create-form.js',
     editForm: './src/js/edit-form.js',
+    createProduct: './src/js/create-product.js',
+    editProduct: './src/js/edit-product.js',
     profile: './src/js/profile.js',
     favorites: './src/js/favorites.js',
     shoppingCart: './src/js/shopping-cart.js'
@@ -91,6 +93,17 @@ module.exports = {
       template: './src/pages/edit-form.html',
       filename: 'edit-form.html',
       chunks: ['editForm']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/pages/create-product.html',
+      filename: 'create-product.html',
+      chunks: ['createProduct']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/edit-product.html',
+      filename: 'edit-product.html',
+      chunks: ['editProduct']
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/profile.html',

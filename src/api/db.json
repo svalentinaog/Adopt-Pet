@@ -75,19 +75,12 @@
       "id": "1",
       "images": [],
       "name": "Purina Cat Chow",
-      "productPrice": 10.99,
       "description": "Purina Cat Chow is a high-quality cat food that provides essential nutrients for a healthy and happy cat.",
       "ageRange": "Adult cats",
-      "typeFood": "Dry"
-    },
-    {
-      "id": "2",
-      "images": [],
-      "name": "Royal Canin Puppy",
-      "productPrice": 29.99,
-      "description": "Royal Canin Puppy food provides a balanced diet rich in vitamins and proteins to support the growth of your puppy.",
-      "ageRange": "Puppies",
-      "typeFood": "Dry"
+      "foodType": "Dry",
+      "productPrice": 10.99,
+      "favorites": [],
+      "cart": []
     }
   ],
   "favorites": [],
