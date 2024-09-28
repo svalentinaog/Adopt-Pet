@@ -1,0 +1,46 @@
+@import "variables";
+
+// botón principal
+@mixin btn-primary() {
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 50px;
+    color: $white-bg-color;
+    background-color: $bg-btn-primary;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    span {
+        width: 2.5em;
+        height: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75em 1.25em;
+        background-color: $bg-icon-btn-primary;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+    }
+
+    .icon {
+        color: $color-icon-btn-primary;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        background-color: $bg-btn-primary-hv;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+
+        .icon {
+            color: $color-icon-btn-primary-hv;
+        }
+
+        span {
+            background-color: $bg-icon-btn-primary-hv;
+        }
+    }
+}

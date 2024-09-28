@@ -6,9 +6,12 @@ module.exports = {
     index: './src/index.js',
     login: './src/js/login.js',
     register: './src/js/register.js',
-    userDetail: './src/js/user-detail.js',
+    home: './src/js/home.js',
     petDetail: './src/js/pet-detail.js',
     productDetail: './src/js/product-detail.js',
+    createForm: './src/js/create-form.js',
+    editForm: './src/js/edit-form.js',
+    profile: './src/js/profile.js',
     favorites: './src/js/favorites.js',
     shoppingCart: './src/js/shopping-cart.js'
   },
@@ -34,6 +37,18 @@ module.exports = {
           'sass-loader' // Convierte/Compila SASS a CSS
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]', // mantiene la estructura de carpetas
+              outputPath: 'assets/images/', // carpeta de salida dentro de dist
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -53,9 +68,9 @@ module.exports = {
       chunks: ['register']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/user-detail.html',
-      filename: 'user-detail.html',
-      chunks: ['userDetail']
+      template: './src/pages/home.html',
+      filename: 'home.html',
+      chunks: ['home']
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/pet-detail.html',
@@ -66,6 +81,21 @@ module.exports = {
       template: './src/pages/product-detail.html',
       filename: 'product-detail.html',
       chunks: ['productDetail']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/create-form.html',
+      filename: 'create-form.html',
+      chunks: ['createForm']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/edit-form.html',
+      filename: 'edit-form.html',
+      chunks: ['editForm']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/profile.html',
+      filename: 'profile.html',
+      chunks: ['profile']
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/favorites.html',

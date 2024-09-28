@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Información de la Mascota</title>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h2>Editar Información de la Mascota</h2>
+    <form id="formEditPet">
+        <label for="images">Imágenes (selecciona varias):</label>
+        <input type="file" id="images" name="images" multiple>
+
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Nombre de la mascota" required>
+
+        <label for="gender">Género:</label>
+        <input type="text" id="gender" name="gender" placeholder="Género de la mascota" required>
+
+        <label for="breed">Raza:</label>
+        <input type="text" id="breed" name="breed" placeholder="Raza de la mascota" required>
+
+        <label for="eyeColor">Color de Ojos:</label>
+        <input type="text" id="eyeColor" name="eyeColor" placeholder="Color de ojos" required>
+
+        <label for="personality">Personalidad:</label>
+        <textarea id="personality" name="personality" placeholder="Describe la personalidad" required></textarea>
+
+        <label for="medicalInfo">Información Médica:</label>
+        <textarea id="medicalInfo" name="medicalInfo" placeholder="Detalles médicos" required></textarea>
+
+        <label for="biography">Biografía:</label>
+        <textarea id="biography" name="biography" placeholder="Biografía de la mascota" required></textarea>
+
+        <label for="aboutPet">Acerca de la Mascota:</label>
+        <textarea id="aboutPet" name="aboutPet" placeholder="Información adicional" required></textarea>
+
+        <label for="adoptionPrice">Precio de Adopción:</label>
+        <input type="number" name="adoptionPrice" id="adoptionPrice" placeholder="Precio de adopción" required>
+
+        <button id="update-pet" type="submit">Guardar Mascota</button>
+    </form>
+    <!-- <script src="../js/edit-form.js"></script> -->
+    <script src="editForm.bundle.js" defer></script>
+</body>
+
+</html>
