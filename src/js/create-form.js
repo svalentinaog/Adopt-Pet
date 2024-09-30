@@ -1,4 +1,5 @@
 import "../stylesheets/main.scss";
+import { loadLayout } from "./layout.js";
 import { url_pets } from "./routes/router.js";
 import { postPets } from "./modules/pets/postPets.js";
 
@@ -24,7 +25,6 @@ formPet.addEventListener("submit", (e) => {
         imagesArray.push(imageUrl);
     }
 
-    // Crear el objeto de mascota
     const newPet = {
         id: crypto.randomUUID(),
         images: imagesArray,
@@ -36,8 +36,14 @@ formPet.addEventListener("submit", (e) => {
         medicalInfo,
         biography,
         aboutPet,
-        adoptionPrice: parseFloat(adoptionPrice)
+        adoptionPrice: parseFloat(adoptionPrice),
+        favorites: [],
+        cart: []
     };
 
     postPets(url_pets, newPet)
 });
+
+document.addEventListener("DOMContentLoaded", async () => {
+    loadLayout()
+})

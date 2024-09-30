@@ -1,4 +1,5 @@
 import "../stylesheets/main.scss";
+import { loadLayout } from "./layout.js";
 import { url_products } from "./routes/router.js";
 import { postProducts } from "./modules/products/postProducts.js";
 
@@ -21,16 +22,21 @@ formProduct.addEventListener("submit", (e) => {
         imagesArr.push(imageUrl);
     }
 
-    // Crear el objeto de mascota
+    // bjeto de mascota
     const newProducts = {
         id: crypto.randomUUID(),
-        images: imagesArr,
+        images: imagesArr[0],
         name,
         description,
         ageRange,
         foodType,
-        productPrice
+        productPrice,
+        cart: []
     };
 
     postProducts(url_products, newProducts)
 });
+
+document.addEventListener("DOMContentLoaded", async () => {
+    loadLayout()
+})

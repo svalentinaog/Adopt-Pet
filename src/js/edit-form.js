@@ -1,6 +1,7 @@
 import "../stylesheets/main.scss";
 import { url_pets } from "./routes/router.js";
 import { putPets } from "./modules/pets/putPets.js";
+import { loadLayout } from "./layout.js";
 
 const formEditPet = document.getElementById("formEditPet");
 
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
         console.error("No se encontró el ID de la mascota en la URL");
     }
+
+    loadLayout()
 });
 
 // Envío del formulario
@@ -95,3 +98,7 @@ formEditPet.addEventListener("submit", async (e) => {
         console.error("Error al actualizar los datos:", error);
     }
 });
+
+// document.addEventListener("DOMContentLoaded", async () => {
+   
+// })

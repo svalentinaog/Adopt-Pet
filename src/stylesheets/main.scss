@@ -3,11 +3,13 @@
 
 @import "pages/entry";
 @import "pages/auth";
+@import "pages/home";
 @import "pages/pet-detail";
 
-@import "layout/header";
-@import "layout/footer";
+@import "layout/nav";
+
 @import "base/base";
 
 @import "components/card";
 @import "components/cards";
+@import "components/searchbar";

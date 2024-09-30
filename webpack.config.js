@@ -123,7 +123,7 @@ module.exports = {
   ],
   devServer: {
     static: path.join(__dirname, 'dist'), // En Webpack 5 es 'static' en lugar de 'contentBase'
-    port: 9000,
+    port: 3001,
     compress: true,
     open: true,
     hot: true,

@@ -54,6 +54,17 @@
       "cart": [],
       "myPets": [],
       "profileImage": ""
+    },
+    {
+      "id": "9ac000f2-aae3-40e9-9a93-dc4560b30172",
+      "name": "",
+      "phone": "",
+      "email": "",
+      "password": "",
+      "favorites": [],
+      "cart": [],
+      "myPets": [],
+      "profileImage": ""
     }
   ],
   "pets": [
@@ -68,6 +79,64 @@
       "aboutPet": "x",
       "adoptionPrice": "60",
       "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
+    },
+    {
+      "name": "Jericho",
+      "gender": "Female",
+      "breed": "Siames",
+      "eyeColor": "Cafe",
+      "personality": "Particular",
+      "medicalInfo": "Ninguna",
+      "biography": "x",
+      "aboutPet": "x",
+      "adoptionPrice": "60",
+      "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
+    },
+    {
+      "name": "Jericho",
+      "gender": "Female",
+      "breed": "Siames",
+      "eyeColor": "Cafe",
+      "personality": "Particular",
+      "medicalInfo": "Ninguna",
+      "biography": "x",
+      "aboutPet": "x",
+      "adoptionPrice": "60",
+      "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
+    },
+    {
+      "id": "b42caacd-337b-4e47-ad44-b3785c29d521",
+      "images": [
+        "blob:http://localhost:3001/1f142d17-d605-4d0d-8d79-a626c18aad18"
+      ],
+      "name": "Tina",
+      "gender": "Female",
+      "breed": "Medusa",
+      "eyeColor": "Lila",
+      "personality": "linda",
+      "medicalInfo": "ninguna",
+      "biography": "hola",
+      "aboutPet": "q",
+      "adoptionPrice": 100,
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "daca40f5-328b-42e5-aeba-cee11a190e0a",
+      "images": [
+        "blob:http://localhost:3001/ddec337f-b817-4e49-ab2a-90dccdf24d51"
+      ],
+      "name": "Tina",
+      "gender": "Female",
+      "breed": "Medusa",
+      "eyeColor": "Lila",
+      "personality": "linda",
+      "medicalInfo": "ninguna",
+      "biography": "hola",
+      "aboutPet": "q",
+      "adoptionPrice": 100,
+      "favorites": [],
+      "cart": []
     }
   ],
   "products": [
@@ -76,6 +145,17 @@
       "images": [],
       "name": "Purina Cat Chow",
       "description": "Purina Cat Chow is a high-quality cat food that provides essential nutrients for a healthy and happy cat.",
+      "ageRange": "Adult cats",
+      "foodType": "Dry",
+      "productPrice": 10.99,
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "1",
+      "images": [],
+      "name": "Whiskas",
+      "description": "Whiskas is a high-quality cat food that provides essential nutrients for a healthy and happy cat.",
       "ageRange": "Adult cats",
       "foodType": "Dry",
       "productPrice": 10.99,
