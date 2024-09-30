@@ -55,30 +55,32 @@
 .cancel {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 2em;
-    align-items: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+.close-modal {
+    font-size: 1.25em;
+    background-color: transparent !important;
+    color: black;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: red;
+    }
 }
 
 .modal {
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2em 2em 5em 2em;
+    border-radius: 1em;
     text-align: center;
     width: 500px;
-    /* Ancho fijo del modal */
     max-width: 100%;
-    /* Para evitar que el modal se salga de la pantalla en dispositivos pequeños */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Añade un efecto de sombra para mejorar el diseño */
 }
-
-// .modal button {
-//     margin: 10px;
-//     padding: 10px 20px;
-//     font-size: 16px;
-// }
-
 
 .options-modal {
     width: 100%;
@@ -90,7 +92,6 @@
 
 .options-modal button {
     width: 150px;
-    // height: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,9 +101,23 @@
     border: 1px solid #ACACAC;
     font-size: 0.8em;
     padding: 1em;
+    transition: all 0.3s ease;
 
     i {
         margin-left: 1em;
         pointer-events: none;
     }
+
+    &:hover {
+        border: none;
+        box-shadow: 3px 0px 10px rgba(163, 163, 163, 0.5);
+    }
+}
+
+.btn-pet:hover {
+    background-color: #FED45B;
+}
+
+.btn-product:hover {
+    background-color: #9DD5E4;
 }

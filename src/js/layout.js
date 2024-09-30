@@ -14,10 +14,10 @@ export function loadLayout() {
                 <a  href="#" class="open-modal itemNav"> 
                     <i class="fa-solid fa-circle-plus"></i>
                 </a>
-                <a class="itemNav" href="./favorites.html">
+                <a class="itemNav" href="./shopping-cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-                <a class="itemNav" href="./favorites.html">
+                <a class="itemNav" href="./profile.html">
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
@@ -33,8 +33,8 @@ export function loadLayout() {
                 </div> 
                 <h2>¿Qué quieres crear?</h2>
                 <div class="options-modal">
-                <button id="create-product-btn">Add pet <i class="fa-solid fa-volleyball"></i></button>
-                <button id="create-pet-btn">Add product <i class="fa-solid fa-paw"></i></button>
+                <button class="btn-pet" id="create-pet-btn">Add pet <i class="fa-solid fa-paw"></i></button>
+                <button class="btn-product" id="create-product-btn">Add product <i class="fa-solid fa-volleyball"></i></button>
                 </div>
             </div>
         </div>
