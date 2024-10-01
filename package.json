@@ -9,7 +9,6 @@
     "dev": "webpack serve --mode development",
     "watch": "webpack --watch --mode development",
     "render": "node index.js"
-
   },
   "keywords": [],
   "author": "Valentina Ortiz",
