@@ -69,49 +69,13 @@
   ],
   "pets": [
     {
-      "name": "Lorian",
-      "gender": "Female",
-      "breed": "Siames",
-      "eyeColor": "Cafe",
-      "personality": "Particular",
-      "medicalInfo": "Ninguna",
-      "biography": "x",
-      "aboutPet": "x",
-      "adoptionPrice": "60",
-      "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
-    },
-    {
-      "name": "Jericho",
-      "gender": "Female",
-      "breed": "Siames",
-      "eyeColor": "Cafe",
-      "personality": "Particular",
-      "medicalInfo": "Ninguna",
-      "biography": "x",
-      "aboutPet": "x",
-      "adoptionPrice": "60",
-      "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
-    },
-    {
-      "name": "Jericho",
-      "gender": "Female",
-      "breed": "Siames",
-      "eyeColor": "Cafe",
-      "personality": "Particular",
-      "medicalInfo": "Ninguna",
-      "biography": "x",
-      "aboutPet": "x",
-      "adoptionPrice": "60",
-      "id": "524971ad-c37a-41c7-a3f6-a4b52ebe1d6f"
-    },
-    {
-      "id": "b42caacd-337b-4e47-ad44-b3785c29d521",
+      "id": "daca40f5-328b-42e5-aeba-cee11a190e0a",
       "images": [
-        "blob:http://localhost:3001/1f142d17-d605-4d0d-8d79-a626c18aad18"
+        "blob:http://localhost:3001/ddec337f-b817-4e49-ab2a-90dccdf24d51"
       ],
-      "name": "Tina",
+      "name": "Konan",
       "gender": "Female",
-      "breed": "Medusa",
+      "breed": "Angora",
       "eyeColor": "Lila",
       "personality": "linda",
       "medicalInfo": "ninguna",
@@ -126,15 +90,49 @@
       "images": [
         "blob:http://localhost:3001/ddec337f-b817-4e49-ab2a-90dccdf24d51"
       ],
-      "name": "Tina",
+      "name": "Giratina",
       "gender": "Female",
-      "breed": "Medusa",
+      "breed": "Siames",
       "eyeColor": "Lila",
       "personality": "linda",
       "medicalInfo": "ninguna",
       "biography": "hola",
       "aboutPet": "q",
       "adoptionPrice": 100,
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "1db3daf5-00c4-4117-922b-f943b0093fed",
+      "images": [
+        "blob:http://localhost:9000/594408b0-6c7e-4f52-a515-4312d891a6a0"
+      ],
+      "name": "Giratina",
+      "gender": "Female",
+      "breed": "Siames",
+      "eyeColor": "Cafe",
+      "personality": "f",
+      "medicalInfo": "f",
+      "biography": "f",
+      "aboutPet": "f",
+      "adoptionPrice": 10,
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "d2fc63d2-c589-4f04-a483-112f33a2157f",
+      "images": [
+        "blob:http://localhost:9000/16e0479b-6dd7-494a-bf45-7c00086a4672"
+      ],
+      "name": "danger",
+      "gender": "Male",
+      "breed": "Cuervo",
+      "eyeColor": "Cafe",
+      "personality": "ddd",
+      "medicalInfo": "ddd",
+      "biography": "dd",
+      "aboutPet": "ddd",
+      "adoptionPrice": 12,
       "favorites": [],
       "cart": []
     }

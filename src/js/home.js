@@ -6,30 +6,41 @@ import { getProducts } from "./modules/products/getProducts.js";
 import { showPets } from "./modules/pets/showPets.js";
 import { showProducts } from "./modules/products/showProducts.js";
 
-
 import contentImage from '../../assets/images/user/girl.jpg';
 const pet = document.querySelector('.contentImage img');
 pet.src = contentImage;
 
-
 const container = document.getElementById("container");
 const containerPets = document.getElementById("containerPets");
 const containerProducts = document.getElementById("containerProducts");
+// const searchInput = document.getElementById('searchInput');
 
 if (container) {
     document.addEventListener("DOMContentLoaded", async () => {
-        console.log('LOADED DOM')
+        console.log('Loaded DOM ☘️')
         try {
-            // Cargar y mostrar mascotas
+            // * Cargar y mostrar mascotas
             const pets = await getPets(url_pets);
 
             if (pets && pets.length > 0) {
 
-                // Limpiar el contenedor de mascotas
+                const params = new URLSearchParams(window.location.search);
+                const petBreed = params.get("breed");
+
+                let filteredPets = pets;
+
+                if (petBreed) {
+                    filteredPets = pets.filter((pet) => pet.breed === petBreed);
+                }
+
                 containerPets.innerHTML = '';
 
-                // Mostrar mascotas
-                showPets(containerPets, pets);
+                if (filteredPets.length === 0) {
+                    containerPets.innerHTML = "<p> <i class=\"fa-solid fa-cat\"></i> There are no pets available of that breed...</p>";
+                } else {
+                    showPets(containerPets, filteredPets);
+                }
+
                 console.log("Se han cargado las mascotas.");
 
             } else {
@@ -37,15 +48,13 @@ if (container) {
                 containerPets.innerHTML = "<p>No hay mascotas disponibles en este momento.</p>";
             }
 
-            // Cargar y mostrar  productos
+            // * Cargar y mostrar  productos
             const products = await getProducts(url_products);
 
             if (products && products.length > 0) {
-                
-                // Limpiar el contenedor de productos
+
                 containerProducts.innerHTML = ''
 
-                // Mostrar los productos
                 showProducts(containerProducts, products);
                 console.log("Se han cargado los productos.");
             } else {
@@ -57,7 +66,7 @@ if (container) {
             console.error("Error al cargar las mascotas o los productos:", error);
             container.innerHTML = "<p>Error al cargar las mascotas o productos.</p>";
         }
-        finally{
+        finally {
             loadLayout()
         }
     });

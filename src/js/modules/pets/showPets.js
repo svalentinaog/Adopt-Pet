@@ -1,7 +1,7 @@
 import { deletePets } from "./deletePets.js";
 
 export const showPets = (containerPets, pets) => {
-    
+
     containerPets.innerHTML = "";
 
     pets.forEach(element => {
@@ -12,7 +12,7 @@ export const showPets = (containerPets, pets) => {
             <div class="detail">
                 <div class="user-info">
                     <div class="user-image">
-                        <img alt="userImage">
+                        <img src="${element.images[0]}" alt="userImage">
                     </div>
                     <div class="user-text">
                         <h3>Nick Factural</h3>
@@ -25,7 +25,7 @@ export const showPets = (containerPets, pets) => {
             </div>
             <div class="features">
                 <div class="pet-image containerImgPet">
-                    <img alt="petImage">
+                    <img  alt="petImage">
                 </div>
                 <div class="pet-info">
                     <p class="gender">${element.gender}</p>
@@ -42,18 +42,21 @@ export const showPets = (containerPets, pets) => {
         </div>
         `;
 
-        // cambiar por este icono cuando den clic a Favoritos:
-        // <i class="fa-solid fa-heart"></i> 
-
-        // Array de imagenes:
-        // <img src="${element.images}" alt="${element.name}" class="petImage">
-
         const deletePetById = petElement.querySelector(".delete");
 
-        deletePetById.addEventListener("click", (e) => {
-            console.log(e.target.id);
-            deletePets(url_pets, e.target.id);
+        deletePetById.addEventListener("click", async (e) => {
+            const petId = e.currentTarget.id; // Obtiene el id del botón correctamente
+            console.log("Deleting pet with ID: ", petId);
+
+            try {
+                await deletePets(url_pets, petId);
+                // Eliminar el elemento del DOM después de eliminar la mascota en la base de datos
+                petElement.remove();
+            } catch (error) {
+                console.error("Error al eliminar la mascota:", error);
+            }
         });
+
 
         containerPets.appendChild(petElement);
     });

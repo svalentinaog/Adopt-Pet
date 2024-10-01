@@ -14,19 +14,19 @@
     transition: transform 0.3s ease;
 }
 
-.cardPet::before,
-.cardProduct::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 1em;
-    border: 2px solid transparent;
-    transition: all 0.5s ease;
-    z-index: 0;
-}
+// .cardPet::before,
+// .cardProduct::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     border-radius: 1em;
+//     border: 2px solid transparent;
+//     transition: all 0.5s ease;
+//     z-index: 0;
+// }
 
 .cardPet:hover {
     transform: scale(0.98);
@@ -164,4 +164,15 @@
     button i {
         pointer-events: none;
     }
+}
+
+
+.delete:hover {
+    background-color: #FFDE5A;
+    border: none;
+}
+
+.edit:hover {
+    background-color: #9DD5E4;
+    border: none;
 }

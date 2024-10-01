@@ -22,7 +22,6 @@ formProduct.addEventListener("submit", (e) => {
         imagesArr.push(imageUrl);
     }
 
-    // bjeto de mascota
     const newProducts = {
         id: crypto.randomUUID(),
         images: imagesArr[0],
@@ -37,6 +36,6 @@ formProduct.addEventListener("submit", (e) => {
     postProducts(url_products, newProducts)
 });
 
-document.addEventListener("DOMContentLoaded", async () => {
-    loadLayout()
-})
+// document.addEventListener("DOMContentLoaded", async () => {
+//     loadLayout()
+// })

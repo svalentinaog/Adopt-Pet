@@ -7,7 +7,9 @@
     "build": "webpack --mode production",
     "start": "nodemon",
     "dev": "webpack serve --mode development",
-    "watch": "webpack --watch --mode development"
+    "watch": "webpack --watch --mode development",
+    "render": "node index.js"
+
   },
   "keywords": [],
   "author": "Valentina Ortiz",
@@ -29,6 +31,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "json-server": "^0.17.1"
   }
 }

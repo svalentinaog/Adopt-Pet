@@ -1,7 +1,7 @@
 export function loadLayout() {
     if (!document.querySelector('.nav-container')) {
 
-        const cuerpo = document.querySelector("body");
+        const body = document.querySelector("body");
         const layout = `
         <div class="nav-container">
             <div class="nav">
@@ -22,7 +22,7 @@ export function loadLayout() {
                 </a>
             </div>
             <div class="non-nav-content">
-                ${cuerpo.innerHTML}
+                ${body.innerHTML}
             </div>
         </div>
         <!-- Modal oculto inicialmente -->
@@ -40,7 +40,7 @@ export function loadLayout() {
         </div>
         `;
 
-        cuerpo.innerHTML = layout;
+        body.innerHTML = layout;
 
         document.querySelector('.open-modal').addEventListener('click', (e) => {
             e.preventDefault(); 
