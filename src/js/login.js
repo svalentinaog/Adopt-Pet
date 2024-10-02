@@ -91,7 +91,6 @@ const validarCampo = (expresion, input, campo) => {
   }
 };
 
-//quiero que por cada input me ejecutes:
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarLogin);
   input.addEventListener("blur", validarLogin);

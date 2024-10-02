@@ -1,4 +1,3 @@
-
 .modal-container {
     position: fixed;
     top: 0;
@@ -79,4 +78,10 @@
 
 .btn-product:hover {
     background-color: #9DD5E4;
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        padding: 1em;
+    }
 }

@@ -39,6 +39,13 @@
 }
 
 @media (max-width: 768px) {
+    .filter-buttons {
+        gap: 0.5em;
+        overflow-x: scroll;
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
+    }
+
     .filter-button img {
         width: 2em;
         height: 2em;

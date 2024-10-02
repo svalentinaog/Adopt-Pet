@@ -14,20 +14,6 @@
     transition: transform 0.3s ease;
 }
 
-// .cardPet::before,
-// .cardProduct::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     border-radius: 1em;
-//     border: 2px solid transparent;
-//     transition: all 0.5s ease;
-//     z-index: 0;
-// }
-
 .cardPet:hover {
     transform: scale(0.98);
     box-shadow: 3px 0px 30px rgba(255, 222, 90, 0.2);
@@ -38,12 +24,12 @@
     box-shadow: 3px 0px 30px rgba(128, 219, 210, 0.2);
 }
 
-.cardPet:hover::before {
+.cardPet:hover {
     border: 2px solid rgba(255, 222, 90);
     animation: glowing-border 1.5s infinite alternate;
 }
 
-.cardProduct:hover::before {
+.cardProduct:hover {
     border: 2px solid rgba(128, 219, 210);
     animation: glowing-border 1.5s infinite alternate;
 }
@@ -63,7 +49,7 @@
 .user-image,
 .user-image img {
     max-width: 100%;
-    height: 1.5em;
+    height: 2em;
     border-radius: 100%;
 }
 
@@ -89,6 +75,14 @@
     gap: 2em;
 }
 
+.containerImgPet {
+    background-color: #FED45B;
+}
+
+.containerImgProduct {
+    background-color: #9DD5E4;
+}
+
 .pet-image {
     display: flex;
     justify-content: center;
@@ -100,16 +94,8 @@
     position: relative;
 }
 
-.containerImgPet {
-    background-color: #FED45B;
-}
-
-.containerImgProduct {
-    background-color: #9DD5E4;
-}
-
 .pet-image img {
-    width: 100%;
+    width: auto;
     height: 200px;
     position: absolute;
     bottom: 0;
@@ -165,7 +151,6 @@
         pointer-events: none;
     }
 }
-
 
 .delete:hover {
     background-color: #FFDE5A;

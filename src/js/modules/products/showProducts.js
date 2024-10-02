@@ -1,15 +1,16 @@
 // import { deleteProducts } from "./deleteProducts.js";
 
 export const showProducts = (containerProducts, products) => {
-    
+
     containerProducts.innerHTML = "";
 
     products.forEach(element => {
         const productElement = document.createElement("div");
-        productElement.innerHTML = ''
+        productElement.classList.add("cardProduct");
+
+        productElement.innerHTML = "";
 
         productElement.innerHTML = `
-             <div class="cardProduct">
             <div class="detail">
                 <div class="user-info">
                     <div class="user-text">
@@ -27,7 +28,6 @@ export const showProducts = (containerProducts, products) => {
                     <p class="breed">${element.foodType}</p>
                     <p class="color">${element.productPrice}</p>
                 </div>
-            </div>
             </div>
             `;
 

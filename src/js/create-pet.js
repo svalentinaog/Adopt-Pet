@@ -5,12 +5,11 @@ import { postPets } from "./modules/pets/postPets.js";
 
 const formPet = document.getElementById("formPet");
 
-console.log("Formulario ")
-
+console.log("Form - Create pet! 🐈")
 
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        formPet.addEventListener("submit", (e) => {
+        formPet.addEventListener("submit", async (e) => {
             e.preventDefault();
             const name = document.getElementById('name').value;
             const gender = document.getElementById('gender').value;
@@ -21,14 +20,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             const biography = document.getElementById('biography').value;
             const aboutPet = document.getElementById('aboutPet').value;
             const adoptionPrice = document.getElementById('adoptionPrice').value;
-            // Obtener las imágenes seleccionadas
             const images = document.getElementById('images');
+
             const imagesArray = [];
 
             for (let i = 0; i < images.files.length; i++) {
-                const imageUrl = URL.createObjectURL(images.files[i]); // Genera una URL temporal
+                const imageUrl = URL.createObjectURL(images.files[i]);
                 imagesArray.push(imageUrl);
-            }
+            } 
 
             const newPet = {
                 id: crypto.randomUUID(),
@@ -46,14 +45,26 @@ document.addEventListener("DOMContentLoaded", async () => {
                 cart: []
             };
 
-            console.log("HOLA", url_pets, newPet)
-            postPets(url_pets, newPet)
-        });
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+            if (currentUser) {
+                if (!currentUser.myPets) {
+                    currentUser.myPets = [];
+                }
+
+                currentUser.myPets.push(newPet);
+
+                localStorage.setItem("currentUser", JSON.stringify(currentUser)); // Guardar user actualizado en localStorage
+
+                await postPets(url_pets, newPet); // hacer petición POST
+
+                console.log(newPet)
+                console.log("Mascota creada y añadida a la lista del usuario.");
+            }
+
+            loadLayout()
+        });
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-    finally {
-        loadLayout()
-    }
-})
+});

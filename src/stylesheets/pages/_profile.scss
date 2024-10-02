@@ -1,0 +1,119 @@
+.cardUser {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 1em;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    padding: 4em;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 20em;
+    border-radius: 1em;
+    height: auto;
+    position: absolute;
+    transform: translate(0%, 3%);
+    z-index: 1;
+    border-radius: 0.45rem !important;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+.profile-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-left: 25em;
+
+    h1,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 700;
+        color: #ACACAC;
+    }
+}
+
+.my-pets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    img {
+        opacity: 10;
+        width: 15em;
+        height: auto;
+    }
+
+    p {
+        font-size: 1em;
+        background: #f66060;
+        padding: 0.25em 1em;
+        border-radius: 50px;
+        color: white;
+    }
+}
+
+.item-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+@media (max-width: 768px) {
+    .cardUser {
+        padding: 6em 4em 4em 4em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        border-radius: 0 0 4em 4em;
+        gap: 0.5em;
+    }
+
+    .profile-image {
+        max-width: 10em;
+        transform: translate(0);
+        border-radius: 50%;
+        position: relative;
+        padding: 0;
+        background-color: transparent !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .profile-info {
+        margin: 0;
+        gap: 0.5em;
+    }
+}

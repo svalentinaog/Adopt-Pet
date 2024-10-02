@@ -9,8 +9,8 @@ module.exports = {
     home: './src/js/home.js',
     petDetail: './src/js/pet-detail.js',
     productDetail: './src/js/product-detail.js',
-    createForm: './src/js/create-form.js',
-    editForm: './src/js/edit-form.js',
+    createPet: './src/js/create-pet.js',
+    editPet: './src/js/edit-pet.js',
     createProduct: './src/js/create-product.js',
     editProduct: './src/js/edit-product.js',
     profile: './src/js/profile.js',
@@ -85,14 +85,14 @@ module.exports = {
       chunks: ['productDetail']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/create-form.html',
-      filename: 'create-form.html',
-      chunks: ['createForm']
+      template: './src/pages/create-pet.html',
+      filename: 'create-pet.html',
+      chunks: ['createPet']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/edit-form.html',
-      filename: 'edit-form.html',
-      chunks: ['editForm']
+      template: './src/pages/edit-pet.html',
+      filename: 'edit-pet.html',
+      chunks: ['editPet']
     }),
 
     new HtmlWebpackPlugin({

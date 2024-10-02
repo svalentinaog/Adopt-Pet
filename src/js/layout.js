@@ -1,6 +1,5 @@
 export function loadLayout() {
     if (!document.querySelector('.nav-container')) {
-
         const body = document.querySelector("body");
         const layout = `
         <div class="nav-container">
@@ -43,7 +42,7 @@ export function loadLayout() {
         body.innerHTML = layout;
 
         document.querySelector('.open-modal').addEventListener('click', (e) => {
-            e.preventDefault(); 
+            e.preventDefault();
             document.querySelector('.modal-container').style.display = 'flex';
         });
 

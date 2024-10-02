@@ -10,9 +10,9 @@ import contentImage from '../../assets/images/user/girl.jpg';
 const pet = document.querySelector('.contentImage img');
 pet.src = contentImage;
 
-const container = document.getElementById("container");
-const containerPets = document.getElementById("containerPets");
-const containerProducts = document.getElementById("containerProducts");
+const container = document.getElementById("container"); // contenedor padre
+const containerPets = document.getElementById("containerPets"); // contendor de la sección pets
+const containerProducts = document.getElementById("containerProducts"); // contendor de la sección products
 // const searchInput = document.getElementById('searchInput');
 
 if (container) {
@@ -45,7 +45,6 @@ if (container) {
 
             } else {
                 console.error("No se recibieron mascotas.");
-                containerPets.innerHTML = "<p>No hay mascotas disponibles en este momento.</p>";
             }
 
             // * Cargar y mostrar  productos
