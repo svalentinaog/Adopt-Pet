@@ -55,7 +55,7 @@ export function loadLayout() {
         });
 
         document.querySelector('#create-pet-btn').addEventListener('click', () => {
-            window.location.href = './create-form.html';
+            window.location.href = './create-pet.html';
         });
     }
 }
