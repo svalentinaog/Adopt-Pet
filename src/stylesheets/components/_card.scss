@@ -12,26 +12,20 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(0.98);
+    }
 }
 
 .cardPet:hover {
-    transform: scale(0.98);
     box-shadow: 3px 0px 30px rgba(255, 222, 90, 0.2);
-}
-
-.cardProduct:hover {
-    transform: scale(0.98);
-    box-shadow: 3px 0px 30px rgba(128, 219, 210, 0.2);
-}
-
-.cardPet:hover {
     border: 2px solid rgba(255, 222, 90);
-    animation: glowing-border 1.5s infinite alternate;
 }
 
 .cardProduct:hover {
+    box-shadow: 3px 0px 30px rgba(128, 219, 210, 0.2);
     border: 2px solid rgba(128, 219, 210);
-    animation: glowing-border 1.5s infinite alternate;
 }
 
 .detail,
