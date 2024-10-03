@@ -17,7 +17,7 @@ if (!currentUser) {
     window.location.href = "/login.html";
 } else {
     profileInfo.innerHTML = `
-                <h1>${currentUser.name || "Nombre no disponible"};</h1>
+                <h1>${currentUser.name || "Nombre no disponible"}</h1>
                 <div class="item-profile">
                     <i class="icons-profile fa-regular fa-paper-plane"></i>
                     <p>${currentUser.email}</p>
