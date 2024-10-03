@@ -1,5 +1,5 @@
 import "../stylesheets/main.scss";
-import { loadLayout } from "./layout.js";
+import { loadLayout } from "./components/layout.js";
 import { url_products } from "./routes/router.js";
 import { postProducts } from "./modules/products/postProducts.js";
 

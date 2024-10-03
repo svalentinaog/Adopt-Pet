@@ -1,5 +1,6 @@
 import "../stylesheets/main.scss";
-import { loadLayout } from "./layout";
+import { loadLayout } from "./components/layout";
+import { getViewName, historyBack } from "./components/history-back.js";
 
 import contentImage from '../../assets/images/user/girl.jpg';
 import notFound from '../../assets/images/cat-not-found.png';
@@ -7,7 +8,6 @@ import notFound from '../../assets/images/cat-not-found.png';
 const userImage = document.querySelector('.profile-image img');
 userImage.src = contentImage;
 
-// Obtener usuario actual desde localStorage
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 const containerMyPets = document.getElementById("containerMyPets");
@@ -80,6 +80,10 @@ if (!currentUser) {
       <div></div>
   `;
     }
-}
 
-loadLayout();
+    loadLayout();
+
+    const viewName = getViewName();
+
+    historyBack('#containerBackBtn', viewName);
+}

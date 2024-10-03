@@ -1,5 +1,5 @@
 import "../stylesheets/main.scss";
-import { loadLayout } from "./layout.js";
+import { loadLayout } from "./components/layout.js";
 import { url_pets } from "./routes/router.js";
 import { postPets } from "./modules/pets/postPets.js";
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             for (let i = 0; i < images.files.length; i++) {
                 const imageUrl = URL.createObjectURL(images.files[i]);
                 imagesArray.push(imageUrl);
-            } 
+            }
 
             const newPet = {
                 id: crypto.randomUUID(),

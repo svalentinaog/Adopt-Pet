@@ -1,7 +1,7 @@
 import "../stylesheets/main.scss";
 import { url_products } from "./routes/router.js";
 import { putProducts } from "./modules/products/putProducts.js";
-import { loadLayout } from "./layout.js";
+import { loadLayout } from "./components/layout.js";
 
 const formEditProduct = document.getElementById("formEditProduct");
 
@@ -33,15 +33,15 @@ const getQueryParam = (param) => {
 
 // Cargar datos de la mascota al cargar el formulario
 document.addEventListener("DOMContentLoaded", async () => {
-    productId = getQueryParam("id"); 
-    console.log("Product ID:", productId); 
+    productId = getQueryParam("id");
+    console.log("Product ID:", productId);
 
     if (productId) {
         await loadProductData(productId);
     } else {
         console.error("No se encontró el ID del producto en la URL");
     }
-    
+
     loadLayout()
 });
 

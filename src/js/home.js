@@ -1,10 +1,10 @@
 import "../stylesheets/main.scss";
 import { url_pets, url_products } from "./routes/router.js";
 import { getPets } from "./modules/pets/getPets.js";
-import { loadLayout } from "./layout.js";
 import { getProducts } from "./modules/products/getProducts.js";
 import { showPets } from "./modules/pets/showPets.js";
 import { showProducts } from "./modules/products/showProducts.js";
+import { loadLayout } from "./components/layout.js";
 
 import contentImage from '../../assets/images/user/girl.jpg';
 const pet = document.querySelector('.contentImage img');
@@ -18,6 +18,7 @@ const containerProducts = document.getElementById("containerProducts"); // conte
 if (container) {
     document.addEventListener("DOMContentLoaded", async () => {
         console.log('Loaded DOM ☘️')
+
         try {
             // * Cargar y mostrar mascotas
             const pets = await getPets(url_pets);
