@@ -87,6 +87,43 @@
     padding: 4em;
 }
 
+.actions {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+
+    button {
+        width: 2.5em;
+        height: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #ACACAC;
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    button i {
+        pointer-events: none;
+    }
+}
+
+.delete:hover {
+    color: white;
+    background-color: #FFDE5A;
+    border: none;
+}
+
+.edit:hover {
+    color: white;
+    background-color: #9DD5E4;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .profile-image {
         max-width: 10em;
@@ -105,6 +142,10 @@
     .profile-info {
         margin: 0;
         gap: 0.5em;
+    }
+
+    .item-profile {
+        justify-content: center;
     }
 
     .cardUser {

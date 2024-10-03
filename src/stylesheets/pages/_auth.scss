@@ -106,7 +106,9 @@
     }
 
     .link-sign-up {
+        width: 100%;
         font-size: 1em;
+        text-align: center;
         font-weight: 600;
         margin: 0;
 
@@ -175,6 +177,8 @@
     @media (max-width: 768px) {
         .container {
             flex-direction: column;
+            padding: 1em;
+            margin: 0;
         }
 
         .division {
