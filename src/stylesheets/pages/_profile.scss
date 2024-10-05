@@ -38,7 +38,6 @@
 
     p {
         font-size: 1em;
-        font-weight: 700;
         color: #ACACAC;
     }
 }
@@ -125,9 +124,13 @@
     border: none;
 }
 
+.icons-profile {
+    color: #ACACAC;
+}
+
 @media (max-width: 768px) {
     .profile-image {
-        max-width: 10em;
+        max-width: 7em;
         transform: translate(0);
         border-radius: 50%;
         position: relative;
@@ -143,14 +146,27 @@
     .profile-info {
         margin: 0;
         gap: 0.5em;
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 0.75em;
+        }
+    }
+
+    .icons-profile {
+        font-size: 0.75em;
     }
 
     .item-profile {
         justify-content: center;
+        gap: 0.5em;
     }
 
     .cardUser {
-        padding: 6em 4em 4em 4em;
+        padding: 6em 0 4em 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;

@@ -10,7 +10,7 @@ export function loadLayout() {
                 <a class="itemNav" href="./favorites.html">
                     <i class="fa-regular fa-heart"></i>
                 </a>
-                <a  href="#" class="open-modal itemNav"> 
+                <a  href="#" class="open-modal itemNav icon-mas"> 
                     <i class="fa-solid fa-circle-plus"></i>
                 </a>
                 <a class="itemNav" href="./shopping-cart.html">
