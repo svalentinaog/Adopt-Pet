@@ -26,7 +26,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        color: red;
+        color: $red-color;
     }
 }
 
@@ -36,7 +36,7 @@
     align-items: center;
     flex-direction: column;
     gap: 2em;
-    background-color: white;
+    background-color: $white-color;
     padding: 2.5em 2.5em 5em 2.5em;
     border-radius: 1em;
     text-align: center;
@@ -58,10 +58,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: $dark-color;
     border-radius: 50px;
     background-color: transparent;
-    border: 1px solid #ACACAC;
+    border: 1px solid $grey-color;
     font-size: 0.8em;
     padding: 1em;
     transition: all 0.3s ease;
@@ -78,11 +78,11 @@
 }
 
 .btn-pet:hover {
-    background-color: #FED45B;
+    background-color: $yellow-color;
 }
 
 .btn-product:hover {
-    background-color: #9DD5E4;
+    background-color: $light-blue-color;
 }
 
 @media (max-width: 768px) {

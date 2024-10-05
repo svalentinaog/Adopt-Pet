@@ -1,7 +1,7 @@
 .cardPet,
 .cardProduct {
     max-width: 100%;
-    background-color: white;
+    background-color: $white-color;
     padding: 1.5em 3em;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 
     p {
         font-size: 0.7em;
-        color: #ACACAC;
+        color: $grey-color;
         margin: 0;
     }
 }
@@ -71,11 +71,11 @@
 }
 
 .containerImgPet {
-    background-color: #FED45B;
+    background-color: $yellow-color;
 }
 
 .containerImgProduct {
-    background-color: #9DD5E4;
+    background-color: $light-blue-color;
 }
 
 .pet-image {
@@ -100,7 +100,7 @@
 }
 
 .pet-info {
-    color: white;
+    color: $white-color;
     font-size: 0.7em;
     text-align: center;
     text-transform: lowercase !important;
@@ -119,15 +119,15 @@
 }
 
 .pet-info .gender {
-    background-color: #FF5858;
+    background-color: $coral-color;
 }
 
 .pet-info .breed {
-    background-color: #23F3DF;
+    background-color: $cyan-color;
 }
 
 .pet-info .color {
-    background-color: #FFDE5A;
+    background-color: $yellow-color;
 }
 
 @media (max-width: 768px) {

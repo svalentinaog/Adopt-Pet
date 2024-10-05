@@ -9,7 +9,7 @@
 .filter-button {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: $white-color;
     padding: 0.5em;
     border-radius: 50px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
@@ -18,7 +18,6 @@
 }
 
 .filter-button:hover {
-    background-color: #f3f3f3;
     img {
         transform: scale(0.95);
     }
@@ -32,7 +31,7 @@
 }
 
 .filter-button span {
-    color: #ACACAC;
+    color: $grey-color;
     font-size: 1em;
     font-weight: bold;
     padding-right: 1em;
@@ -42,7 +41,7 @@
     .filter-buttons {
         gap: 0.5em;
         overflow-x: scroll;
-        scrollbar-width: none; 
+        scrollbar-width: none;
         -ms-overflow-style: none;
     }
 

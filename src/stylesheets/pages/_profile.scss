@@ -7,7 +7,7 @@
     transform: translate(0%, 3%);
     z-index: 1;
     border-radius: 0.45rem !important;
-    background-color: white;
+    background-color: $white-color;
     padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -38,7 +38,7 @@
 
     p {
         font-size: 1em;
-        color: #ACACAC;
+        color: $grey-color;
     }
 }
 
@@ -59,7 +59,7 @@
 
     p {
         font-size: 1em;
-        background: #f66060;
+        background: $red-color;
         padding: 0.25em 1em;
         border-radius: 50px;
         color: white;
@@ -79,7 +79,7 @@
     justify-content: start;
     flex-direction: row;
     gap: 1em;
-    background-color: white;
+    background-color: $white-color;
     border-radius: 0.5em;
     // box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.05);
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
@@ -102,7 +102,7 @@
         color: black;
         border-radius: 50%;
         background-color: transparent;
-        border: 1px solid #ACACAC;
+        border: 1px solid $grey-color;
         font-size: 0.8em;
         padding: 0;
     }
@@ -113,19 +113,19 @@
 }
 
 .delete:hover {
-    color: white;
-    background-color: #FFDE5A;
+    color: $white-color;
+    background-color: $yellow-color;
     border: none;
 }
 
 .edit:hover {
-    color: white;
-    background-color: #9DD5E4;
+    color: $white-color;
+    background-color: $light-blue-color;
     border: none;
 }
 
 .icons-profile {
-    color: #ACACAC;
+    color: $grey-color;
 }
 
 @media (max-width: 768px) {

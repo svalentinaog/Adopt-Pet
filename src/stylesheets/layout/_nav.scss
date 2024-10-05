@@ -15,8 +15,8 @@
     gap: 1em;
     width: auto;
     padding: 2em 1em 0 0;
-    background-color: black;
-    color: white;
+    background-color: $dark-color;
+    color: $white-color;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -26,18 +26,18 @@
     text-align: center;
     font-size: 1.25em;
     width: 100%;
-    color: white;
+    color: $white-color;
     padding: 1em 1em 1em 1.5em;
 }
 
 .icon-mas {
     border-radius: 0 0.95em 0.95em 0;
-    background-color: cyan;
+    background-color: $cyan-color;
     padding: 0.5em 1em 0.5em 1.5em;
 }
 
 .itemNav:hover {
-    color: yellow;
+    color: $yellow-color;
 }
 
 .non-nav-content {

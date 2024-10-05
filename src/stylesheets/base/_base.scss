@@ -5,11 +5,20 @@
 html,
 body {
     font-family: "Nunito", sans-serif;
-    background-color: #FAFAFA;
+    background-color: $white-color;
     margin: 0;
     padding: 0;
     border: none;
     width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $dark-color;
 }
 
 h1,

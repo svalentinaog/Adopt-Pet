@@ -1,7 +1,7 @@
 .search-container {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: $white-color;
   border-radius: 50px;
   padding: 0.5em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
@@ -14,16 +14,16 @@
   padding: 1em;
   width: 100%;
   font-size: 1em;
-  color: #ACACAC !important;
+  color: $grey-color !important;
   border-radius: 50px;
 }
 
 .search-container input::placeholder {
-  color: #ACACAC;
+  color: $grey-color;
 }
 
 .search-icon {
-  background-color: cyan;
+  background-color: $cyan-color;
   border-radius: 50%;
   padding: 1em;
   display: flex;
@@ -34,7 +34,7 @@
 
 .search-icon i {
   font-size: 1em;
-  color: white;
+  color: $white-color;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +44,7 @@
   }
 
   .search-icon {
-    background-color: cyan;
+    background-color: $cyan-color;
     border-radius: 50%;
     padding: 0.75em;
   }

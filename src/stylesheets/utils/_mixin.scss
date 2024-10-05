@@ -1,6 +1,3 @@
-@import "variables";
-
-// botón principal
 @mixin btn-primary() {
     width: auto;
     cursor: pointer;
@@ -9,8 +6,8 @@
     justify-content: space-between;
     padding: 0.5em 0.5em 0.5em 1em;
     border-radius: 50px;
-    color: $white-bg-color;
-    background-color: $bg-btn-primary;
+    color: $white-color;
+    background-color: $dark-color;
     transition: all 0.3s ease;
     box-sizing: border-box;
 
@@ -21,13 +18,13 @@
         align-items: center;
         justify-content: center;
         padding: 0.75em 1.25em;
-        background-color: $bg-icon-btn-primary;
+        background-color: $cyan-color;
         transition: all 0.3s ease;
         border-radius: 50%;
     }
 
     .icon {
-        color: $color-icon-btn-primary;
+        color: $dark-color;
         transition: all 0.3s ease;
     }
 
