@@ -17,9 +17,7 @@ function pageEntry() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const entry = document.getElementById('entry');
-
-    entry.innerHTML = pageEntry();
+    document.getElementById('entry').innerHTML = pageEntry();
 
     const entryImage = document.querySelector('.entry-image img');
     entryImage.src = image;
