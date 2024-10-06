@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { navigationBar } from "../../components/navigationBar.js";
+import { navigationBar } from "../../components/navbar-base-layout.js";
 import { url_pets, url_products } from "../../routes/router.js";
 import { getPets } from "../../services/pets/getPets.js";
 import { getProducts } from "../../services/products/getProducts.js";

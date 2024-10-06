@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { navigationBar } from "../../components/navigationBar.js";
+import { navigationBar } from "../../components/navbar-base-layout.js";
 import { url_products } from "../../routes/router.js";
 import { postProducts } from "../../services/products/postProducts.js";
 

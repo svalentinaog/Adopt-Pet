@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { navigationBar } from "../../components/navigationBar.js";
+import { navigationBar } from "../../components/navbar-base-layout.js";
 import { url_pets } from "../../routes/router.js";
 import { postPets } from "../../services/pets/postPets.js";
 

@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { navigationBar } from "../../components/navigationBar.js";
+import { navigationBar } from "../../components/navbar-base-layout.js";
 import { getViewName, historyBack } from "../../components/history-back.js";
 
 import contentImage from '../../../assets/images/user/girl.jpg';
