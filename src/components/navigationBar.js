@@ -1,6 +1,7 @@
 export function navigationBar() {
     if (!document.querySelector('.nav-container')) {
-        const body = document.querySelector("body").innerHTML = `
+        const body = document.querySelector("body");
+        const navBar = `
         <div class="nav-container">
             <div class="nav">
                 <a class="itemNav" href="./home.html">
@@ -37,6 +38,8 @@ export function navigationBar() {
             </div>
         </div>
         `;
+
+        body.innerHTML = navBar;
 
         document.querySelector('.open-modal').addEventListener('click', (e) => {
             e.preventDefault();
