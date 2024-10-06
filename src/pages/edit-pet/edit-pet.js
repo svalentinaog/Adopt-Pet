@@ -1,7 +1,7 @@
-import "../stylesheets/main.scss";
-import { url_pets } from "./routes/router.js";
-import { putPets } from "./modules/pets/putPets.js";
-import { loadLayout } from "./components/layout.js";
+import "../../stylesheets/main.scss";
+import { url_pets } from "../../routes/router.js";
+import { putPets } from "../../services/pets/putPets.js";
+import { loadLayout } from "../../components/layout.js";
 
 const formEditPet = document.getElementById("formEditPet");
 

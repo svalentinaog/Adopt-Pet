@@ -4,18 +4,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    login: './src/js/login.js',
-    register: './src/js/register.js',
-    home: './src/js/home.js',
-    petDetail: './src/js/pet-detail.js',
-    productDetail: './src/js/product-detail.js',
-    createPet: './src/js/create-pet.js',
-    editPet: './src/js/edit-pet.js',
-    createProduct: './src/js/create-product.js',
-    editProduct: './src/js/edit-product.js',
-    profile: './src/js/profile.js',
-    favorites: './src/js/favorites.js',
-    shoppingCart: './src/js/shopping-cart.js'
+    login: './src/pages/login/login.js',
+    register: './src/pages/register/register.js',
+    home: './src/pages/home/home.js',
+    petDetail: './src/pages/pet-detail/pet-detail.js',
+    productDetail: './src/pages/product-detail/product-detail.js',
+    createPet: './src/pages/create-pet/create-pet.js',
+    editPet: './src/pages/edit-pet/edit-pet.js',
+    createProduct: './src/pages/create-product/create-product.js',
+    editProduct: './src/pages/edit-product/edit-product.js',
+    profile: './src/pages/profile/profile.js',
+    favorites: './src/pages/favorites/favorites.js',
+    shoppingCart: './src/pages/shopping-cart/shopping-cart.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -60,63 +60,63 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/login.html',
+      template: './src/pages/login/login.html',
       filename: 'login.html',
       chunks: ['login']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/register.html',
+      template: './src/pages/register/register.html',
       filename: 'register.html',
       chunks: ['register']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/home.html',
+      template: './src/pages/home/home.html',
       filename: 'home.html',
       chunks: ['home']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/pet-detail.html',
+      template: './src/pages/pet-detail/pet-detail.html',
       filename: 'pet-detail.html',
       chunks: ['petDetail']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/product-detail.html',
+      template: './src/pages/product-detail/product-detail.html',
       filename: 'product-detail.html',
       chunks: ['productDetail']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/create-pet.html',
+      template: './src/pages/create-pet/create-pet.html',
       filename: 'create-pet.html',
       chunks: ['createPet']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/edit-pet.html',
+      template: './src/pages/edit-pet/edit-pet.html',
       filename: 'edit-pet.html',
       chunks: ['editPet']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/pages/create-product.html',
+      template: './src/pages/create-product/create-product.html',
       filename: 'create-product.html',
       chunks: ['createProduct']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/edit-product.html',
+      template: './src/pages/edit-product/edit-product.html',
       filename: 'edit-product.html',
       chunks: ['editProduct']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/profile.html',
+      template: './src/pages/profile/profile.html',
       filename: 'profile.html',
       chunks: ['profile']
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/favorites.html',
+      template: './src/pages/favorites/favorites.html',
       filename: 'favorites.html',
       chunks: ['favorites'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/shopping-cart.html',
+      template: './src/pages/shopping-cart/shopping-cart.html',
       filename: 'shopping-cart.html',
       chunks: ['shoppingCart'],
     })

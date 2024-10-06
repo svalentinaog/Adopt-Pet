@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dar Mascota en Adopción</title>
+    <title>Editar Información de la Mascota</title>
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <h2>Crear Producto</h2>
-    <form id="formProduct">
+    <h2>Editar Información del Producto</h2>
+    <form id="formEditProduct">
         <label for="images">Images (selecciona varias):</label>
         <input type="file" id="images" name="images" multiple>
 
@@ -37,10 +37,10 @@
         <label for="productPrice">Product price:</label>
         <input type="number" name="productPrice" id="productPrice" placeholder="Product price:" required>
 
-        <button type="submit">Agregar Producto</button>
+        <button id="update-product" type="submit">Guardar Producto</button>
     </form>
-    <!-- <script src="../js/create-product.js"></script> -->
-    <script src="createProduct.bundle.js" defer></script>
+    <!-- <script src="./edit-product.js"></script> -->
+    <script src="editProduct.bundle.js" defer></script>
 </body>
 
 </html>

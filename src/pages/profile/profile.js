@@ -1,9 +1,9 @@
-import "../stylesheets/main.scss";
-import { loadLayout } from "./components/layout";
-import { getViewName, historyBack } from "./components/history-back.js";
+import "../../stylesheets/main.scss";
+import { loadLayout } from "../../components/layout.js";
+import { getViewName, historyBack } from "../../components/history-back.js";
 
-import contentImage from '../../assets/images/user/girl.jpg';
-import notFound from '../../assets/images/cat-not-found.png';
+import contentImage from '../../../assets/images/user/girl.jpg';
+import notFound from '../../../assets/images/cat-not-found.png';
 
 const userImage = document.querySelector('.profile-image img');
 userImage.src = contentImage;

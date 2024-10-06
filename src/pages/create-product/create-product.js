@@ -1,7 +1,7 @@
-import "../stylesheets/main.scss";
-import { loadLayout } from "./components/layout.js";
-import { url_products } from "./routes/router.js";
-import { postProducts } from "./modules/products/postProducts.js";
+import "../../stylesheets/main.scss";
+import { loadLayout } from "../../components/layout.js";
+import { url_products } from "../../routes/router.js";
+import { postProducts } from "../../services/products/postProducts.js";
 
 const formProduct = document.getElementById("formProduct");
 

@@ -1,12 +1,12 @@
-import "../stylesheets/main.scss";
-import { url_pets, url_products } from "./routes/router.js";
-import { getPets } from "./modules/pets/getPets.js";
-import { getProducts } from "./modules/products/getProducts.js";
-import { showPets } from "./modules/pets/showPets.js";
-import { showProducts } from "./modules/products/showProducts.js";
-import { loadLayout } from "./components/layout.js";
+import "../../stylesheets/main.scss";
+import { url_pets, url_products } from "../../routes/router.js";
+import { getPets } from "../../services/pets/getPets.js";
+import { getProducts } from "../../services/products/getProducts.js";
+import { showPets } from "../../services/pets/showPets.js";
+import { showProducts } from "../../services/products/showProducts.js";
+import { loadLayout } from "../../components/layout.js";
 
-import contentImage from '../../assets/images/user/girl.jpg';
+import contentImage from '../../../assets/images/user/girl.jpg';
 const pet = document.querySelector('.contentImage img');
 pet.src = contentImage;
 
