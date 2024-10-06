@@ -1,7 +1,7 @@
 import "../../stylesheets/main.scss";
+import { navigationBar } from "../../components/navigationBar.js";
 import { url_pets } from "../../routes/router.js";
 import { putPets } from "../../services/pets/putPets.js";
-import { loadLayout } from "../../components/layout.js";
 
 const formEditPet = document.getElementById("formEditPet");
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error("No se encontró el ID de la mascota en la URL");
     }
 
-    loadLayout()
+    navigationBar()
 });
 
 // Envío del formulario

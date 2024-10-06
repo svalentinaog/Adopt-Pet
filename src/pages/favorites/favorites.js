@@ -1,11 +1,11 @@
 import "../../stylesheets/main.scss";
-import { loadLayout } from "../../components/layout.js";
+import { navigationBar } from "../../components/navigationBar.js";
 import { getViewName, historyBack } from "../../components/history-back.js";
 
 const favorites = document.getElementById("container-favorites");
 // favorites.innerHTML = "<h1>Favoritos</h1>";
 
-loadLayout();
+navigationBar();
 
 const viewName = getViewName();
 

@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { loadLayout } from "../../components/layout.js";
+import { navigationBar } from "../../components/navigationBar.js";
 import { url_products } from "../../routes/router.js";
 import { postProducts } from "../../services/products/postProducts.js";
 
@@ -37,5 +37,5 @@ formProduct.addEventListener("submit", (e) => {
 });
 
 // document.addEventListener("DOMContentLoaded", async () => {
-//     loadLayout()
+//     navigationBar()
 // })

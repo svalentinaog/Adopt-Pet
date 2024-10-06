@@ -1,4 +1,5 @@
-import { loadLayout } from "../../components/layout.js";
+import "../../stylesheets/main.scss"
+import { navigationBar } from "../../components/navigationBar.js";
 
 
-loadLayout();
+navigationBar();

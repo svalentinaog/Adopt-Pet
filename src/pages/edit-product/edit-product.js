@@ -1,7 +1,7 @@
 import "../../stylesheets/main.scss";
+import { navigationBar } from "../../components/navigationBar.js";
 import { url_products } from "../../routes/router.js";
 import { putProducts } from "../../services/products/putProducts.js";
-import { loadLayout } from "../../components/layout.js";
 
 const formEditProduct = document.getElementById("formEditProduct");
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error("No se encontró el ID del producto en la URL");
     }
 
-    loadLayout()
+    navigationBar()
 });
 
 // Envío del formulario

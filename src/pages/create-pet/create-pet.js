@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { loadLayout } from "../../components/layout.js";
+import { navigationBar } from "../../components/navigationBar.js";
 import { url_pets } from "../../routes/router.js";
 import { postPets } from "../../services/pets/postPets.js";
 
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 console.log("Mascota creada y añadida a la lista del usuario.");
             }
 
-            loadLayout()
+            navigationBar()
         });
     } catch (error) {
         console.log(error);

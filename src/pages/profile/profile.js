@@ -1,5 +1,5 @@
 import "../../stylesheets/main.scss";
-import { loadLayout } from "../../components/layout.js";
+import { navigationBar } from "../../components/navigationBar.js";
 import { getViewName, historyBack } from "../../components/history-back.js";
 
 import contentImage from '../../../assets/images/user/girl.jpg';
@@ -81,7 +81,7 @@ if (!currentUser) {
   `;
     }
 
-    loadLayout();
+    navigationBar();
 
     const viewName = getViewName();
 
