@@ -1,4 +1,4 @@
-    .container {
+    .containerAuth {
         display: flex;
         flex-direction: row;
         gap: 7em;
@@ -175,7 +175,7 @@
     }
 
     @media (max-width: 768px) {
-        .container {
+        .containerAuth {
             flex-direction: column;
             padding: 1em;
             margin: 0;

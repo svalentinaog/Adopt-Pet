@@ -10,3 +10,26 @@ navigationBar();
 const viewName = getViewName();
 
 historyBack('#containerBackBtn', viewName);
+
+function pageFavorites() {
+    return `
+        <div div id="containerBackBtn"></div>
+
+        <section id="favoriteItems">
+            <!-- Productos y mascotas favoritas -->
+        </section>
+    `;
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("favorites").innerHTML = pageFavorites();
+
+    document.getElementById("favoriteItems").innerHTML = `<h1>Tus productos y mascotas favoritas</h1>`;
+
+    navigationBar();
+
+    const viewName = getViewName();
+
+    historyBack('#containerBackBtn', viewName);
+})

@@ -30,7 +30,7 @@ export function navigationBar() {
                 <div class="cancel">
                     <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
                 </div> 
-                <h2>¿Qué quieres crear?</h2>
+                <h2>What do you want to do?</h2>
                 <div class="options-modal">
                 <button class="btn-pet" id="create-pet-btn">Add pet <i class="fa-solid fa-paw"></i></button>
                 <button class="btn-product" id="create-product-btn">Add product <i class="fa-solid fa-volleyball"></i></button>

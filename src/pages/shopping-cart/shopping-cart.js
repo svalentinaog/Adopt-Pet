@@ -2,11 +2,25 @@ import "../../stylesheets/main.scss";
 import { navigationBar } from "../../components/navbar-base-layout.js";
 import { getViewName, historyBack } from "../../components/history-back.js";
 
-const shoppingCart = document.getElementById("container-shopping-cart");
-// shoppingCart.innerHTML = `<h1>Listado de los ítems añadidos al carrito</h1>`
+function pageShoppingCart() {
+    return `
+        <div div id="containerBackBtn"></div>
 
-navigationBar();
+        <section id="cartItemList">
+            <!-- Listado de articulos, del carrito de compras -->
+        </section>
+    `;
+}
 
-const viewName = getViewName();
 
-historyBack('#containerBackBtn', viewName);
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("shoppingCart").innerHTML = pageShoppingCart();
+
+    document.getElementById("cartItemList").innerHTML = `<h1>Listado de los ítems añadidos al carrito</h1>`;
+
+    navigationBar();
+
+    const viewName = getViewName();
+
+    historyBack('#containerBackBtn', viewName);
+})
