@@ -57,7 +57,7 @@ function pageRegister() {
               </div>
 
               <button type="submit" class="btn-access">Send <span><i class="fa-solid fa-chevron-right icon"></i></button>
-              <p class="link-sign-up">Already have an account? <a href="/Register.html">Sign In</a></p>
+              <p class="link-sign-up">Already have an account? <a href="/login.html">Sign In</a></p>
 
           </form>
 
